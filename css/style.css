@@ -112,6 +112,11 @@ nav,
   transition: 0.2s;
 }
 
+.menu__link:focus:not(.menu__link--dot),
+.call-to-action__btn:focus {
+  outline: 2px solid black;
+}
+
 .menu__link--dot {
   display: block;
   width: 90%;
@@ -208,6 +213,7 @@ nav,
   font-weight: 700;
   border: none;
   outline: none;
+  text-decoration: none;
   border-radius: 5px;
   color: white;
   margin-right: 1rem;
@@ -250,6 +256,10 @@ nav,
     width: 100vw;
   }
 
+  .menu__link {
+    outline: none;
+  }
+
   .menu__link--gray::before {
     content: none;
   }
@@ -280,6 +290,7 @@ nav,
 
   .dashboard {
     font-size: 1.1rem;
+    margin-top: 5rem;
   }
 
   .heading {
@@ -296,6 +307,7 @@ nav,
   .call-to-action__btn {
     padding: 15 30px;
   }
+
   .call-to-action__label {
     font-size: 1.2rem;
   }
